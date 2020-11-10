@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:whitesmoke;
+}
+
+#main{
+width:80%;
+margin-left: 0%;
+border: 2px black double;
+border-radius: 0px;
+border-style:groove;
+box-shadow: 0pt 0pt 10pt black;
+margin-top: 0px;
+margin-bottom: 0px;
+padding: 0px;
+background: blue;
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    color:white;
+}
+
+input, select, textarea{
+border: none;
+padding:10px;
+border-radius: 3px;
+background-color: white;
+}
+
+Submit{
+    display: block;
+    position: relative;
+    left:300px;
+    margin-top:5px;
+
+}
