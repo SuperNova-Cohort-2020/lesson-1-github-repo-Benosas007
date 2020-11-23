@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //KEYNOTES: JavaScript does not use compilation, it is an interpreted language meaning it does not read the program as a whole, but instead it interprets reads over the JS and interprets each line. please read this short atricle to better understand how js is run.
+//https://medium.com/@allansendagi/inside-the-javascript-engine-compiler-and-interpreter-c8faa638b0d9
+ 
+
+
+
+
+// JavaScript review for our study and practices we will use single quotes to minimize confusion, because java is double quotes, and for now we will console the examples to view them in the CONSOLE in the browser in inspection of page console tool. (right click and inspect the page there you should be able to see the log)
+
+
+//What is a variable? A way for developers to reserve a dedicated space in memory. Similar to a bucket a variable can be though of in the same manner as far as utilization.
+//JavaScript variable declaration 3 ways, once you decalare your variable you name it according to the type of informational value given.
+
+//1)
+// var;
+
+//2)
+// let;
+
+//3
+// const;
+
+//OBJECTIVES:
+//Explain what a primitive data type is
+//Create a primitive data type
+//Explain what an object is
+//Create an object
+
+
+
+
+//dataTypes there are 6 primitive data types let's take a look at them
+//What is meant by primitive? Primitive data types can hold only one value at a time, defines immutable values.
+//All primitive types are immutable (values incapable of being changed), while objects are mutable. Primitive values are important for application performance. They are way faster for an application to process than objects
+
+//dataTypes there are 7 primitive data types 
+
+//String
+//Number
+//Boolean
+//undefined
+//Null
+//Symbol
+
+//Below is an Acronym to help remember the primitive datatypes(BONUSS)
+//B oolean
+//O bject
+//N ull
+//U ndefined
+//S tring
+//S ymbol
+
+//1//    String-a primitive data type that represents a piece of tex for example, must be wrapped in quotations
+//Example 1)
+var string = 'This is a string';
+
+var name = 'Faith';
+
+//let's console the examples above to understand how to view output in the console.
+//Below I am using the console method to the view output.
+
+console.log(string);
+
+console.log(name)
+
+
+
+//Sometimes a new line needs to be created when using a string for this we use escape sequences, below is an example
+var string_Value = 'This is the first line\nThis is the second line';
+console.log(string_Value);
+
+//JavaScript provides a way to convert other datatypes, such as a number or boolean. When conversion from number to string occurs it depends on when the JS script engine encounters the string.
+
+//For example, if the string is the first in the sequence of value, all the numbers that follow are treated as a string.
+//Example demo
+var stringConvert = '4' + 3 +1; 
+console.log(stringConvert);
+//result "431"
+
+//Example 2
+var strValueTwo = 4 + 3 + '1';
+//result 71
+
+
+
+//console on your own to gain practice
+
+
+
+
+
+//2//    Number- primitive datatype represents an integer or floating point number
+//Example 1
+var workDays = 6;
+//Example 2
+var age = 5;
+
+
+//console on your own to gain practice
+
+
+
+
+
+//3//       Boolean- a primitive data type true or false represents logical entity, can be thought of as similar to yes and no.
+var bidenPresident = true;
+var trumpPresident = false;
+
+//console on your own to gain practice
+
+
+//4//      undefined-a primitive data type whose variable is not initialized therefore is is undefinded.
+//Example 1 in this example there is no equal sign (assignement operator) therefore the variable has not been assigned so it is undefined
+let a;
+console.log(a)
+
+//5//     null-speacial (reserved word) in javascript which defines an intentional absence of any object or value.
+//Example
+let covidInfection = null;
+let moniesOwed = null;
+
+//console on your own to gain practice
+ 
+
+ //6//      Symbol-A symbol is a unique and immutable data type and may be used as an identifier for object properties. The symbol object is an implicit object wrapper for the symbol primitive data type.A value having the data type Symbol can be referred to as a symbol value. Symbol is an immutable primitive value that is unique. For example,
+ // two symbols with the same description
+
+ const s1 = Symbol();
+const s2 = Symbol();
+console.log(s1 === s2); // false
+
+
+//7//       BigInt - a numeric primitive datatype representing integers with arbitrary precision. Created with attaching n to the end of an integer literal or by calling the function BigInt()
+
+//example
+const previouslyMaxSafeInteger = 80071239361540591n
+
+
+
+
+//We will get more practice later the objective is just to know what are the primitive datatypes in js and now you know them. Yay!
+
+
+//There is another datatype which is non primitiveJavaScript known as Object. Objects are referred to as a reference type
+
+//The object data type allows a way to store collections of data.They are written with curly brace. Let's look at an example to see how an object is created.
+
+var person = {firstName:"Albert", lastName:"Einstein", age:9007199254740991n, eyeColor:"blue"};
+console.log(person)
+//Be sure to look at this one in the console to see how an object is displayed.
+
+//
+
+</script>
+</body>
+</html>
